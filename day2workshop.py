@@ -4,9 +4,9 @@ ortalama = (vize * 0.4) + (final * 0.6)
 
 if final<40:
     print("Kaldınız")
-if ortalama<50:
+elif ortalama<50:
     print("Ortalamadan kaldınız")
-elif vize>final*2:
+elif vize==final*2:
     print("Malasef kaldınız")
 
 else:
