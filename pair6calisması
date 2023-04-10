@@ -1,0 +1,43 @@
+def toplama(x,y):
+    return x+y
+def cıkar(x,y):
+     return x-y
+def carp(x,y):
+     return x*y
+def bol(x,y):
+     return x/y
+def modbulma(x,y):
+     return x%y
+
+ 
+
+def calculator():
+    quit=1
+    while quit==1: 
+        sayi1 = int(input("Lütfen birinci sayıyı giriniz "))
+        sayi2 = int(input("Lütfen ikinci sayıyı giriniz: "))
+        islem = input("İşlem yapmak için %,+,-,*,/, işlemleri bitirmek için q tuşuna basınız ")
+        if islem=="q":
+             print("Çıkış yapılıyor")
+             quit==0
+             break
+        if islem == "+" :
+            print(toplama(sayi1,sayi2))
+        elif islem == "-":
+            print(cıkar(sayi1,sayi2))
+        elif islem == "*":
+            print(carp(sayi1,sayi2))
+        elif islem == "/":
+            print(bol(sayi1,sayi2))
+        elif islem == "%":
+            print(modbulma(sayi1,sayi2))
+        else: 
+                print("Hatalı bir işlem yaptınız")
+                break
+            
+        
+            
+            
+            
+
+calculator()
